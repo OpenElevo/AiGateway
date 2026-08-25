@@ -4,7 +4,7 @@
 
 Unify model access, control organizational usage, maintain service quality, and trace the cost and ownership of every AI request.
 
-[Start free](https://gateway.elevo.vip/portal/register) | [Models and pricing](https://gateway.elevo.vip/portal/public/pricing) | [Integration guide](https://gateway.elevo.vip/portal/public/guide) | [Service status](https://gateway.elevo.vip/portal/public/status) | [简体中文](README.md)
+[Start free](https://gateway.elevo.vip/portal/register) | [简体中文](README.md)
 
 [![Elevo AI Gateway enterprise AI operations workspace](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
@@ -65,7 +65,7 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-Never place API keys in source code, browser code, logs, or GitHub issues. Read the [integration guide](https://gateway.elevo.vip/portal/public/guide) before a production rollout.
+Never place API keys in source code, browser code, logs, or GitHub issues. Available models, endpoints, and parameters depend on the current console configuration.
 
 ## Product and service access
 
@@ -73,8 +73,6 @@ Never place API keys in source code, browser code, logs, or GitHub issues. Read 
 | --- | --- |
 | Try the online service | [Register for Elevo AI Gateway](https://gateway.elevo.vip/portal/register) |
 | Use the gateway for free | Connect your own upstream after registration and use Elevo AI Gateway for free; pay your upstream provider directly |
-| Review currently published models and prices | [Models and pricing](https://gateway.elevo.vip/portal/public/pricing) |
-| Integrate a production application | [Integration guide](https://gateway.elevo.vip/portal/public/guide) |
 | Discuss accounts, contracts, billing, or procurement | [support@elevo.vip](mailto:support@elevo.vip) |
 
 This repository is not an installable software distribution and does not contain the Elevo AI Gateway product source code. It is the public hub for product information, releases, and community collaboration. Contact support to confirm deployment and procurement options.

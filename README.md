@@ -4,7 +4,7 @@
 
 统一接入模型，控制组织用量，保障服务质量，追踪每一次 AI 请求的成本与责任。
 
-[免费注册](https://gateway.elevo.vip/portal/register) | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) | [接入指南](https://gateway.elevo.vip/portal/public/guide) | [服务状态](https://gateway.elevo.vip/portal/public/status) | [English](README.en.md)
+[免费注册](https://gateway.elevo.vip/portal/register) | [English](README.en.md)
 
 [![Elevo AI Gateway 企业 AI 运行治理工作台](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
@@ -65,7 +65,7 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-不要把 API Key 写入源码、浏览器代码、日志或 Issue。生产接入前请阅读[在线接入指南](https://gateway.elevo.vip/portal/public/guide)。
+不要把 API Key 写入源码、浏览器代码、日志或 Issue。具体模型、端点和参数支持范围以控制台当前配置为准。
 
 ## 产品与服务入口
 
@@ -73,8 +73,6 @@ print(response.choices[0].message.content)
 | --- | --- |
 | 在线体验 | [注册 Elevo AI Gateway](https://gateway.elevo.vip/portal/register) |
 | 免费使用网关 | 注册后接入自有上游，免费使用 Elevo AI Gateway；上游模型费用自行结算 |
-| 查看当前模型和公开价格 | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) |
-| 生产接入与协议示例 | [接入指南](https://gateway.elevo.vip/portal/public/guide) |
 | 账户、合同、账单或企业采购 | [support@elevo.vip](mailto:support@elevo.vip) |
 
 本仓库不是可安装的软件发行包，也不包含 Elevo AI Gateway 产品源代码。它是公开的产品信息、版本发布和社区协作入口；部署与采购方式请联系支持团队确认。

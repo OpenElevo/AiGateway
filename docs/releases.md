@@ -38,4 +38,4 @@
 
 ## 获取更新
 
-在 GitHub 仓库右上角选择 **Watch > Custom > Releases**，即可只订阅正式发布通知。产品运行状态与版本发布相互独立，请通过[服务状态页](https://gateway.elevo.vip/portal/public/status)查看实时情况。
+在 GitHub 仓库右上角选择 **Watch > Custom > Releases**，即可只订阅正式发布通知。产品运行状态与版本发布相互独立。
