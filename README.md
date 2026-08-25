@@ -8,7 +8,7 @@
 
 [![Elevo AI Gateway 企业 AI 运行治理工作台](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
-> **已有模型账号？接入自有上游，Elevo 不收模型调用费。** 组织可以配置自己的供应商账号、Base URL 和 API Key，继续获得统一接口、权限控制、用量统计、质量观测和请求审计。上游模型费用仍由用户与供应商直接结算；企业专属服务或部署安排以双方约定为准。
+> **已有模型账号？接入自有上游，免费使用 Elevo AI Gateway。** 组织可以配置自己的供应商账号、Base URL 和 API Key，免费使用统一接口、权限控制、用量统计、质量观测和请求审计。模型调用费用仍由用户与上游供应商直接结算；企业专属服务或部署安排以双方约定为准。
 
 ## 当企业开始规模化使用 AI
 
@@ -25,7 +25,7 @@ Elevo AI Gateway 在业务应用与模型供应商之间提供统一的运行治
 
 | 价值 | 能力 |
 | --- | --- |
-| 统一接入 | 使用 OpenAI Chat Completions、OpenAI Responses 和 Anthropic Messages 等熟悉的调用方式，连接平台模型或免费接入企业自有上游 |
+| 统一接入 | 使用 OpenAI Chat Completions、OpenAI Responses 和 Anthropic Messages 等熟悉的调用方式，连接平台模型，或接入自有上游并免费使用网关能力 |
 | 成本可控 | 按组织、成员、应用、API Key 和模型归集用量与费用，配置额度、限额和模型访问范围 |
 | 质量可见 | 对比成功率、延迟、错误和渠道状态，并通过策略路由与受控故障恢复降低上游波动影响 |
 
@@ -72,7 +72,7 @@ print(response.choices[0].message.content)
 | 需求 | 入口 |
 | --- | --- |
 | 在线体验 | [注册 Elevo AI Gateway](https://gateway.elevo.vip/portal/register) |
-| 免费接入自有模型账号 | 注册后在组织中配置上游渠道；Elevo 不收自有上游模型调用费 |
+| 免费使用网关 | 注册后接入自有上游，免费使用 Elevo AI Gateway；上游模型费用自行结算 |
 | 查看当前模型和公开价格 | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) |
 | 生产接入与协议示例 | [接入指南](https://gateway.elevo.vip/portal/public/guide) |
 | 账户、合同、账单或企业采购 | [support@elevo.vip](mailto:support@elevo.vip) |
