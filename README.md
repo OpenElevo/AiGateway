@@ -1,29 +1,50 @@
 # Elevo AI Gateway
 
-企业大模型统一接入、成本治理与服务质量平台。
+**企业 AI 运行治理平台**
 
-[English](README.en.md) | [产品官网](https://gateway.elevo.vip) | [接入指南](https://gateway.elevo.vip/portal/public/guide) | [服务状态](https://gateway.elevo.vip/portal/public/status) | [问题与需求](https://github.com/OpenElevo/AiGateway/issues)
+统一接入模型，控制组织用量，保障服务质量，追踪每一次 AI 请求的成本与责任。
 
-> 本仓库是 Elevo AI Gateway 的公开产品与社区协作入口，用于发布版本信息、特性更新，受理问题并讨论需求。产品源代码目前不在本仓库公开。
+[免费注册](https://gateway.elevo.vip/portal/register) | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) | [接入指南](https://gateway.elevo.vip/portal/public/guide) | [服务状态](https://gateway.elevo.vip/portal/public/status) | [English](README.en.md)
 
-## 为什么需要 Elevo AI Gateway
+[![Elevo AI Gateway 企业 AI 运行治理工作台](https://gateway.elevo.vip/portal/elevo-ai-gateway-og.png)](https://gateway.elevo.vip)
 
-当团队同时使用多个模型、供应商和 AI 应用时，接入方式、费用归属、权限边界和故障排查会迅速变得复杂。Elevo AI Gateway 在业务应用与模型供应商之间提供一个稳定入口，让模型持续演进，而业务接入保持一致。
+## 当企业开始规模化使用 AI
 
-| 能力 | 解决的问题 |
+一个模型、一个应用时，直接调用供应商 API 通常已经足够。当多个团队开始使用不同模型、供应商和内部服务后，企业需要持续回答：
+
+- 谁在使用 AI，调用了哪些模型？
+- 每个团队、应用和成员产生了多少用量与费用？
+- 哪些模型或渠道正在影响服务质量？
+- 如何调整模型与供应商，而不让每个业务系统重复改造？
+
+Elevo AI Gateway 在业务应用与模型供应商之间提供统一的运行治理层，把模型接入、访问控制、用量成本、服务质量和审计追溯放到同一个管理框架中。
+
+## 三个核心价值
+
+| 价值 | 能力 |
 | --- | --- |
-| 统一模型入口 | 通过 OpenAI 兼容接口接入多个模型与渠道 |
-| 智能路由与恢复 | 按配置选择可用渠道，并在允许的范围内执行故障恢复 |
-| 组织与权限治理 | 按组织、成员、应用和 API Key 控制模型访问范围 |
-| 用量与成本管理 | 记录用量和费用，支持额度、预算及多维分析 |
-| 服务质量观测 | 分析成功率、延迟、错误和渠道运行情况 |
-| 审计与追溯 | 将请求归属到明确的组织、应用、成员和凭证 |
+| 统一接入 | 使用 OpenAI Chat Completions、OpenAI Responses 和 Anthropic Messages 等熟悉的调用方式，连接平台模型或企业已有模型账号 |
+| 成本可控 | 按组织、成员、应用、API Key 和模型归集用量与费用，配置额度、限额和模型访问范围 |
+| 质量可见 | 对比成功率、延迟、错误和渠道状态，并通过策略路由与受控故障恢复降低上游波动影响 |
 
-具体模型、协议和能力以当前租户配置及控制台展示为准。完整边界见[特性说明](docs/features.md)。
+Elevo AI Gateway 的重点不是简单聚合更多模型，而是帮助企业把 AI 变成可管理、可计量、可追溯、可持续运营的基础设施。
 
-## 快速接入
+具体模型、端点和能力取决于租户配置及控制台当前发布状态。详见[特性与能力边界](docs/features.md)。
 
-Elevo AI Gateway 可使用 OpenAI SDK。先在控制台创建 API Key，再将 SDK 的 `base_url` 指向网关：
+## 适合谁
+
+- 已有多个 AI 应用、业务团队或模型供应商的企业；
+- 需要按租户、客户、项目或团队核算 AI 成本的 SaaS 公司；
+- 同时使用公有云模型和企业已有模型账号的组织；
+- 需要统一管理权限、额度、质量和使用记录的 IT 与 AI 平台团队。
+
+如果当前只有一个模型、一个应用和少量开发者，直接使用模型供应商接口通常更简单。Elevo AI Gateway 的价值会随着模型、应用和使用人员增加而体现。
+
+## 5 分钟开始接入
+
+1. [免费注册](https://gateway.elevo.vip/portal/register)并创建组织。
+2. 在控制台选择可用模型并创建 API Key。
+3. 将现有 SDK 的 API Key 和接入地址切换到 Elevo AI Gateway。
 
 ```python
 import os
@@ -44,27 +65,34 @@ print(response.choices[0].message.content)
 
 不要把 API Key 写入源码、浏览器代码、日志或 Issue。生产接入前请阅读[在线接入指南](https://gateway.elevo.vip/portal/public/guide)。
 
-## 版本与更新
+## 产品与服务入口
 
-- [版本与发布策略](docs/releases.md)：版本号、稳定性、兼容性和升级信息如何发布。
-- [特性与能力](docs/features.md)：当前公开能力和支持边界。
-- [公开路线图](ROADMAP.md)：正在评估和推进的方向，不承诺未经发布的日期。
-- [GitHub Releases](https://github.com/OpenElevo/AiGateway/releases)：正式版本说明的唯一公开归档。
+| 需求 | 入口 |
+| --- | --- |
+| 在线体验 | [注册 Elevo AI Gateway](https://gateway.elevo.vip/portal/register) |
+| 查看当前模型和公开价格 | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) |
+| 生产接入与协议示例 | [接入指南](https://gateway.elevo.vip/portal/public/guide) |
+| 账户、合同、账单或企业采购 | [support@elevo.vip](mailto:support@elevo.vip) |
 
-## 反馈与讨论
+本仓库不是可安装的软件发行包，也不包含 Elevo AI Gateway 产品源代码。它是公开的产品信息、版本发布和社区协作入口；部署与采购方式请联系支持团队确认。
 
-提交前请先搜索现有内容，避免重复：
+## 版本与产品方向
+
+- [版本与发布策略](docs/releases.md)：版本号、兼容性、升级和弃用信息如何发布。
+- [特性与能力](docs/features.md)：当前公开能力及其支持边界。
+- [公开路线图](ROADMAP.md)：持续建设和评估方向，不代表发布日期承诺。
+- [GitHub Releases](https://github.com/OpenElevo/AiGateway/releases)：自首个公开版本起归档正式版本说明。
+
+## 问题、需求与讨论
 
 - 遇到可复现的产品问题：[报告 Bug](https://github.com/OpenElevo/AiGateway/issues/new?template=bug.yml)
 - 希望新增或改进能力：[提出功能需求](https://github.com/OpenElevo/AiGateway/issues/new?template=feature.yml)
 - 接入、配置或使用疑问：[提出问题](https://github.com/OpenElevo/AiGateway/issues/new?template=question.yml)
-- 需要开放式交流：[参与 Discussions](https://github.com/OpenElevo/AiGateway/discussions)
-- 涉及漏洞、凭证或隐私数据：不要创建公开 Issue，请遵循[安全策略](SECURITY.md)
+- 尚未收敛的产品想法：[参与 Discussions](https://github.com/OpenElevo/AiGateway/discussions)
+- 漏洞、凭证或隐私事件：不要公开提交，请遵循[安全策略](SECURITY.md)
 
-我们会按[支持策略](SUPPORT.md)进行分流和响应。提交内容时请删除 API Key、Token、Cookie、完整请求正文、个人信息和内部地址。
+我们会按[支持策略](SUPPORT.md)进行分流。公开内容必须删除 API Key、Token、Cookie、完整业务数据、个人信息和内部地址。
 
-## 参与维护
+欢迎改进公开文档和参与需求讨论。开始前请阅读[贡献指南](CONTRIBUTING.md)与[社区行为准则](CODE_OF_CONDUCT.md)。仓库维护规则见[维护者手册](MAINTAINERS.md)。
 
-欢迎改进公开文档、补充可复现案例并参与需求讨论。开始前请阅读[贡献指南](CONTRIBUTING.md)与[社区行为准则](CODE_OF_CONDUCT.md)。仓库维护规则见[维护者手册](MAINTAINERS.md)。
-
-除非仓库中另有明确的许可证文件，本仓库内容及产品软件均不因公开可见而自动获得开源许可。Elevo、Elevo AI Gateway 及相关标识的权利归其各自权利人所有。
+除非仓库中另有明确的许可证文件，公开可见不代表本仓库内容或产品软件已获得开源许可。Elevo、Elevo AI Gateway 及相关标识的权利归其各自权利人所有。

@@ -1,6 +1,6 @@
 # 版本与发布策略
 
-GitHub Releases 是 Elevo AI Gateway 对外版本说明的唯一公开归档。此仓库不会根据内部构建号补造历史版本。
+自首个公开版本起，GitHub Releases 将作为 Elevo AI Gateway 正式版本说明的公开归档。此仓库不会根据内部构建号补造历史版本。
 
 ## 版本号
 
