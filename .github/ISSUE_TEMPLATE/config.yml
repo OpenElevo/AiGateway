@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 开放式讨论 / Open discussion
+    url: https://github.com/OpenElevo/AiGateway/discussions
+    about: 适合方案交流、经验分享和尚未收敛的问题。
+  - name: 安全问题 / Security issue
+    url: https://github.com/OpenElevo/AiGateway/blob/main/SECURITY.md
+    about: 请勿公开披露漏洞、凭证或隐私数据。
+  - name: 账户与商业支持 / Account and commercial support
+    url: mailto:support@elevo.vip
+    about: 用于账户、合同、账单或租户数据问题。

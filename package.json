@@ -1,0 +1,15 @@
+{
+  "name": "elevo-ai-gateway-community",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Validation tooling for the Elevo AI Gateway community repository",
+  "scripts": {
+    "test": "node --test scripts/validate-repository.test.js && node scripts/validate-repository.js"
+  },
+  "devDependencies": {
+    "yaml": "2.8.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,77 @@
+name: Bug 报告
+description: 报告可复现的 Elevo AI Gateway 产品问题
+title: "[Bug]: "
+labels: ["type: bug", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先删除 API Key、Token、Cookie、提示词、个人信息、内部地址和完整业务数据。安全问题请按 SECURITY.md 私下报告。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已搜索现有 Issue，未发现相同问题。
+          required: true
+        - label: 我确认该问题不包含安全漏洞或未经脱敏的敏感数据。
+          required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 影响范围
+      options:
+        - 模型 API / SDK 接入
+        - 模型与渠道路由
+        - API Key / 权限
+        - 用量 / 计费 / 预算
+        - 服务质量 / 日志
+        - 控制台 / 门户
+        - 文档 / 社区仓库
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 简明说明发生了什么，以及它造成的影响。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 最小复现步骤
+      description: 使用占位符替换凭证和业务数据；不要粘贴完整生产请求。
+      placeholder: |
+        1. 使用端点或页面 ...
+        2. 配置 ...
+        3. 执行 ...
+        4. 出现 ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望与实际结果
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: 发生时间与时区
+      placeholder: "例如：2026-08-26 14:30 UTC+8"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 可填写客户端、SDK 版本、入口协议、HTTP 状态码、脱敏请求 ID 和浏览器版本。
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他信息
+      description: 仅提供已脱敏、对复现必要的日志片段或截图。

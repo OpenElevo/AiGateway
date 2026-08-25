@@ -1,0 +1,18 @@
+changelog:
+  exclude:
+    labels:
+      - "release: skip"
+  categories:
+    - title: 新增功能
+      labels:
+        - "type: feature"
+    - title: 问题修复
+      labels:
+        - "type: bug"
+    - title: 文档与社区
+      labels:
+        - "area: documentation"
+        - "area: community"
+    - title: 其他变更
+      labels:
+        - "*"

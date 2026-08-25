@@ -1,0 +1,25 @@
+title: "[想法] "
+labels: ["type: discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: 开放讨论适合尚未收敛的产品想法。已明确的问题或需求请使用 Issue 表单。
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景
+      description: 这个想法来自什么场景或观察？
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想法
+      description: 希望改善什么，以及你如何判断它有效？
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: 约束与取舍
+      description: 有哪些安全、成本、兼容性或运维约束？

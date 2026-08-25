@@ -1,0 +1,52 @@
+name: 使用问题
+description: 询问接入、配置或产品使用方式
+title: "[Question]: "
+labels: ["type: question", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        账户、合同、账单和租户数据请联系 support@elevo.vip。不要公开 API Key、Token、个人信息或完整业务数据。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已查阅在线指南并搜索现有 Issue 和 Discussion。
+          required: true
+        - label: 我确认内容已经脱敏，且不涉及安全漏洞。
+          required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题领域
+      options:
+        - 模型 API / SDK 接入
+        - 模型与渠道配置
+        - API Key / 权限
+        - 用量 / 计费 / 预算
+        - 服务质量 / 日志
+        - 控制台 / 门户
+        - 版本 / 路线图
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 想完成什么
+      description: 描述你的目标和已尝试的方法。
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: 当前阻碍
+      description: 提供错误现象、脱敏配置或最小示例。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 可填写客户端、SDK 版本、入口协议和浏览器版本。
