@@ -8,6 +8,8 @@ Unify model access, control organizational usage, maintain service quality, and 
 
 [![Elevo AI Gateway enterprise AI operations workspace](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
+> **Already have model provider accounts? Connect your own upstream without Elevo model usage charges.** Configure your provider account, base URL, and API key while retaining a unified interface, access controls, usage analytics, quality visibility, and request auditing. You still pay your model provider directly; dedicated enterprise services or deployment arrangements are subject to separate terms.
+
 ## When AI usage grows beyond one application
 
 Calling a provider API directly is usually enough for one model and one application. Once several teams use different models, providers, and internal services, organizations need consistent answers to four questions:
@@ -23,7 +25,7 @@ Elevo AI Gateway provides a shared governance layer between applications and mod
 
 | Outcome | Capability |
 | --- | --- |
-| Unified access | Use familiar OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages interfaces with platform models or existing enterprise provider accounts |
+| Unified access | Use familiar OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages interfaces with platform models, or connect your own upstream without Elevo model usage charges |
 | Controlled cost | Attribute usage and cost by organization, member, application, API key, and model; apply quotas, rate limits, and model access policies |
 | Visible quality | Compare success rate, latency, errors, and upstream health; reduce the impact of provider instability through policy-based routing and bounded recovery |
 
@@ -43,8 +45,8 @@ For one model, one application, and a small developer group, using a provider AP
 ## Get started in five minutes
 
 1. [Create an account](https://gateway.elevo.vip/portal/register) and an organization.
-2. Select an available model and create an API key in the console.
-3. Point your existing SDK at Elevo AI Gateway.
+2. Select a platform model, or configure your own upstream base URL and API key.
+3. Create a gateway API key and point your existing SDK at Elevo AI Gateway.
 
 ```python
 import os
@@ -70,6 +72,7 @@ Never place API keys in source code, browser code, logs, or GitHub issues. Read 
 | Need | Destination |
 | --- | --- |
 | Try the online service | [Register for Elevo AI Gateway](https://gateway.elevo.vip/portal/register) |
+| Connect an existing provider account | Configure an organization upstream after registration; Elevo does not charge for model usage on your own upstream |
 | Review currently published models and prices | [Models and pricing](https://gateway.elevo.vip/portal/public/pricing) |
 | Integrate a production application | [Integration guide](https://gateway.elevo.vip/portal/public/guide) |
 | Discuss accounts, contracts, billing, or procurement | [support@elevo.vip](mailto:support@elevo.vip) |
