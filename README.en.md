@@ -6,7 +6,7 @@ Unify model access, control organizational usage, maintain service quality, and 
 
 [Start free](https://gateway.elevo.vip/portal/register) | [Models and pricing](https://gateway.elevo.vip/portal/public/pricing) | [Integration guide](https://gateway.elevo.vip/portal/public/guide) | [Service status](https://gateway.elevo.vip/portal/public/status) | [简体中文](README.md)
 
-[![Elevo AI Gateway enterprise AI operations workspace](https://gateway.elevo.vip/portal/elevo-ai-gateway-og.png)](https://gateway.elevo.vip)
+[![Elevo AI Gateway enterprise AI operations workspace](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
 ## When AI usage grows beyond one application
 

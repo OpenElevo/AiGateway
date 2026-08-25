@@ -6,7 +6,7 @@
 
 [免费注册](https://gateway.elevo.vip/portal/register) | [模型与价格](https://gateway.elevo.vip/portal/public/pricing) | [接入指南](https://gateway.elevo.vip/portal/public/guide) | [服务状态](https://gateway.elevo.vip/portal/public/status) | [English](README.en.md)
 
-[![Elevo AI Gateway 企业 AI 运行治理工作台](https://gateway.elevo.vip/portal/elevo-ai-gateway-og.png)](https://gateway.elevo.vip)
+[![Elevo AI Gateway 企业 AI 运行治理工作台](assets/elevo-ai-gateway-overview.png)](https://gateway.elevo.vip)
 
 ## 当企业开始规模化使用 AI
 
