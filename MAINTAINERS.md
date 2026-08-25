@@ -41,7 +41,7 @@
 
 - 默认分支：`main`。
 - 开启 Issues、Discussions、Private vulnerability reporting 和自动删除已合并分支。
-- `main` 使用规则集要求 Pull Request、至少一名代码所有者审批、对话已解决和 `validate` 检查通过。
+- `main` 使用分支保护要求 Pull Request、至少一名维护者审批、对话已解决和 `validate` 检查通过。
 - 不允许强制推送和删除 `main`。
 - 标签名称与本文件保持一致；修改标签时同步 Issue Forms 和 `.github/release.yml`。
 
